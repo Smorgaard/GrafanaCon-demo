@@ -869,6 +869,14 @@ spec:
                                             maxColumnCount: 3
                                             rowHeightMode: standard
                                     title: Filtered
+                                - kind: RowsLayoutRow
+                                  spec:
+                                    collapse: false
+                                    layout:
+                                        kind: GridLayout
+                                        spec:
+                                            items: []
+                                    title: Add row to test pr
                     title: Fleet overview
                 - kind: TabsLayoutTab
                   spec:
@@ -1011,7 +1019,17 @@ spec:
                             maxColumnCount: 3
                             rowHeightMode: tall
                     title: Github Stats
-    links: []
+    links:
+        - asDropdown: false
+          icon: external link
+          includeVars: false
+          keepTime: false
+          tags: []
+          targetBlank: true
+          title: Source (GitHub)
+          tooltip: View source file in repository
+          type: link
+          url: https://github.com/Smorgaard/GrafanaCon-demo/blob/main/grot-plushies-monitoring-dashboard-synced.yaml
     liveNow: false
     preferences:
         layout:
@@ -1034,10 +1052,10 @@ spec:
             - 2h
             - 1d
         fiscalYearStartMonth: 0
-        from: "2026-04-19T19:22:42.102Z"
+        from: now-3h
         hideTimepicker: false
         timezone: browser
-        to: "2026-04-20T19:22:42.102Z"
+        to: now
     title: Grot Plushies Monitoring Dashboard - synced
     variables:
         - kind: SwitchVariable
